@@ -1,0 +1,180 @@
+legend.fieldset-legend {
+  white-space: nowrap;
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.375rem;
+}
+
+.nemesis-card {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 28px rgba(3, 8, 18, 0.28);
+}
+
+.nemesis-input,
+.nemesis-select,
+.nemesis-textarea {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--fg);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.nemesis-input::placeholder,
+.nemesis-textarea::placeholder {
+  color: var(--fg-3);
+}
+
+.nemesis-input:focus,
+.nemesis-select:focus,
+.nemesis-textarea:focus {
+  border-color: #5eead4;
+  box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.14);
+}
+
+.nemesis-input-error,
+.nemesis-select-error,
+.nemesis-textarea-error {
+  border-color: #ef4444;
+}
+
+.nemesis-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b6b6b' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.875rem center;
+  padding-right: 2rem;
+}
+
+.btn-brand {
+  font-family: var(--font-display);
+  background: linear-gradient(135deg, #00f5ff 0%, #00b8c4 100%);
+  color: #001018;
+  border: none;
+  border-radius: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-brand:hover:not(:disabled) {
+  background: linear-gradient(135deg, #33f7ff 0%, #00d2de 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 0 16px rgba(0, 245, 255, 0.35);
+}
+
+.btn-brand:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-outline:hover {
+  background: #17253d;
+  border-color: rgba(94, 234, 212, 0.34);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-2);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.375rem 0.875rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover:not(.chip-active):not(.chip-disabled) {
+  border-color: rgba(10, 10, 10, 0.2);
+  color: var(--fg);
+}
+
+.chip-active {
+  background: #5eead4;
+  border-color: #5eead4;
+  color: #fff;
+}
+
+.chip-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.alert-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+}
+
+.alert-banner-error {
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  color: #fecaca;
+}
+
+.alert-banner-success {
+  background: rgba(94, 234, 212, 0.12);
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  color: #99f6e4;
+}
+
+/* Admin dashboard only */
+.btn-gradient {
+  background: linear-gradient(99deg, #0D8CD2 28.91%, #675FA9 93.02%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.btn-gradient:hover:not(:disabled) {
+  background: #fff;
+  color: #101B51;
+}
+
+.example-frame img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+.ergonia-hero {
+  background:
+    radial-gradient(120% 120% at 100% 0%, rgba(94, 234, 212, 0.14) 0%, rgba(94, 234, 212, 0) 58%),
+    radial-gradient(120% 120% at 0% 100%, rgba(129, 140, 248, 0.14) 0%, rgba(129, 140, 248, 0) 58%),
+    var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 1.25rem;
+}
+
+.dsc-grid-lines {
+  background-image: linear-gradient(rgba(0, 245, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.04) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
