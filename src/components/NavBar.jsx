@@ -58,6 +58,7 @@ const NavBar = () => {
           <nav className="hidden lg:flex items-center gap-5 flex-wrap justify-center">
             {navLink('HOME', '/home')}
             {navLink('ARCHIVE', '#', false)}
+            {navLink('ROADMAP', '/roadmap')}
             {navLink('NETWORK', '#', false)}
             {navLink('CHAT', '#', false)}
             {navLink('COINS', '#', false)}
