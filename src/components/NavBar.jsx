@@ -57,8 +57,8 @@ const NavBar = () => {
 
           <nav className="hidden lg:flex items-center gap-5 flex-wrap justify-center">
             {navLink('HOME', '/home')}
-            {navLink('ARCHIVE', '#', false)}
             {navLink('ROADMAP', '/roadmap')}
+            {navLink('ARCHIVE', '#', false)}
             {navLink('NETWORK', '#', false)}
             {navLink('CHAT', '#', false)}
             {navLink('COINS', '#', false)}
@@ -107,6 +107,7 @@ const NavBar = () => {
         <div className="border-t border-brand/10 bg-[#03060c]/98 px-5 py-4 flex flex-col gap-4">
           {[
             { label: 'HOME', to: '/home', isRoute: true },
+            { label: 'ROADMAP', to: '/roadmap', isRoute: true },
             { label: 'ECHO AI', to: '/echo', isRoute: true },
             { label: 'NETWORK', to: '/echo-world', isRoute: true },
             { label: 'ARCHIVE', to: '#', isRoute: false },
