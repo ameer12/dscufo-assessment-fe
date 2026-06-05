@@ -7,6 +7,7 @@ import ScrollToTop from './components/ScrollToTop'
 import HomeLanding from './components/HomeLanding'
 import EchoWorldPage from './components/EchoWorldPage'
 import EchoPage from './components/EchoPage'
+import RoadmapPage from './components/RoadmapPage'
 
 function AppRoutes() {
   return (
