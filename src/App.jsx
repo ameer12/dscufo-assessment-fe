@@ -1,3 +1,4 @@
+
 import './App.css'
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import Footer from './components/Footer'
@@ -16,6 +17,7 @@ function AppRoutes() {
       <Route path="/home" element={<HomeLanding />} />
       <Route path="/echo-world" element={<EchoWorldPage />} />
       <Route path="/echo" element={<EchoPage />} />
+      <Route path="/roadmap" element={<RoadmapPage />} />
       <Route path="*" element={<Navigate to="/home" replace />} />
     </Routes>
   )
